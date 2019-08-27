@@ -10,6 +10,12 @@ namespace DeckOfCards
     {
         static void Main(string[] args)
         {
+            string intro = "=================================\r\n" +
+                           "App to work with a deck of cards.\r\n" + 
+                           "Author - Ilgiz Urazbaev.\r\n" +
+                           "=================================";
+            Console.WriteLine(intro);
+            Console.ReadLine();
         }
     }
 }

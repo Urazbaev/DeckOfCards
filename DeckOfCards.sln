@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckOfCards", "DeckOfCards\DeckOfCards.csproj", "{34A4A137-DEB2-45D5-9523-D0BD0BFD52DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Library", "Logic\Logic.Library.csproj", "{C75B5EE1-2EBF-4D5D-95C9-C69DC7113D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic.Library.Tests", "Logic.Library.Tests\Logic.Library.Tests.csproj", "{09600E97-5E60-4B28-8B0D-90AF757EF69C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{34A4A137-DEB2-45D5-9523-D0BD0BFD52DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34A4A137-DEB2-45D5-9523-D0BD0BFD52DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34A4A137-DEB2-45D5-9523-D0BD0BFD52DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75B5EE1-2EBF-4D5D-95C9-C69DC7113D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75B5EE1-2EBF-4D5D-95C9-C69DC7113D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75B5EE1-2EBF-4D5D-95C9-C69DC7113D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75B5EE1-2EBF-4D5D-95C9-C69DC7113D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09600E97-5E60-4B28-8B0D-90AF757EF69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09600E97-5E60-4B28-8B0D-90AF757EF69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09600E97-5E60-4B28-8B0D-90AF757EF69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09600E97-5E60-4B28-8B0D-90AF757EF69C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
