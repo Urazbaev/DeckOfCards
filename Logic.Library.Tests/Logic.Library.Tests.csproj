@@ -52,6 +52,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DeckOfCards\DeckOfCards.csproj">
+      <Project>{34a4a137-deb2-45d5-9523-d0bd0bfd52da}</Project>
+      <Name>DeckOfCards</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logic\Logic.Library.csproj">
       <Project>{c75b5ee1-2ebf-4d5d-95c9-c69dc7113d85}</Project>
       <Name>Logic.Library</Name>

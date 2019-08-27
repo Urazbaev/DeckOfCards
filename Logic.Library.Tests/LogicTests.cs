@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Logic;
 
 namespace Logic.Library.Tests
 {
@@ -11,9 +12,11 @@ namespace Logic.Library.Tests
     public class LogicTests
     {
         [Test]
-        public void StartTest()
+        public void DeckHasCards()
         {
-            Assert.Pass();
+            Deck deck = new Deck(52);
+            string firstcard = deck.ShowCards().ToString();
+            Assert.IsNotEmpty(firstcard);
         }
     }
 }
