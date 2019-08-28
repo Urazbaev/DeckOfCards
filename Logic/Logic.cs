@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/* Author Ilgiz. 
+ * Main logic for creating and shuffling decks.
+ * Two types of decks. With 52 and 32 cards.
+ */
+
 namespace Logic
 {
     public class Deck

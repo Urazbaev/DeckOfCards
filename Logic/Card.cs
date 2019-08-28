@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/* Author Ilgiz. 
+ * Custom Card class.
+ */
+
 namespace Logic
 {
     public class Card
@@ -19,7 +23,7 @@ namespace Logic
 
         public override string ToString()
         {
-            return "  => " + value + " of " + suit;
+            return " => " + value + " of " + suit + " <= ";
         }
     }
 }

@@ -5,6 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Logic;
 
+/* Author Ilgiz.
+ * This is a console application.
+ * This app asks a few question to determine what user wants to see.
+ * User can choose between 52 or 32 cards in a deck.
+ * After that user can choose to see all cards or one by one.
+ */
+
 namespace DeckOfCards
 {
     class Program
@@ -37,14 +44,14 @@ namespace DeckOfCards
             CloseConsole();
         }
 
+        //Reply with a user choice on a First question
         private static int FirstInputConfirmation(int input_first)
         {
             int size = 0;
             if (input_first == 1){
                 Console.WriteLine("You chose a standard deck.\r\n");
                 size = 52;
-            } else if (input_first == 2)
-            {
+            } else if (input_first == 2) {
                 Console.WriteLine("You chose a stripped deck.\r\n");
                 size = 32;
             } else {
@@ -54,25 +61,24 @@ namespace DeckOfCards
             return size;
         }
 
+        //Reply with a user choice on a Second question
         private static void SecondInputConfirmation(int size_of_deck, int input_second)
         {
-            if (input_second == 1)
-            {
+            if (input_second == 1) {
                 Console.WriteLine("You chose to show cards one by one.\r\n");
                 ShowOneCard(size_of_deck);
             }
-            else if (input_second == 2)
-            {
+            else if (input_second == 2) {
                 Console.WriteLine("You chose to show all cards.\r\n");
                 ShowAllCards(size_of_deck);
             }
-            else
-            {
+            else {
                 Console.WriteLine("You typed a wrong number. Press 'ESC' or 'X' to Exit.\r\n");
                 CloseConsole();
             }
         }
 
+        //Validation to avoid anything except integers
         private static int Validate()
         {
             int input;
@@ -84,6 +90,7 @@ namespace DeckOfCards
             return input;
         }
 
+        //Method to show all cards in the deck
         private static void ShowAllCards(int size)
         {
             Deck deck = new Deck(size);
@@ -96,6 +103,7 @@ namespace DeckOfCards
             }
         }
 
+        //Method to show only one card and ask about the next one
         private static void ShowOneCard(int size)
         {
             Deck deck = new Deck(size);
@@ -119,6 +127,7 @@ namespace DeckOfCards
             }
         }
 
+        //Method to close application
         private static void CloseConsole()
         {
             ConsoleKeyInfo keys;

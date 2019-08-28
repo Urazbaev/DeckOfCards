@@ -6,6 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Logic;
 
+/* Author Ilgiz.
+ * Tests for this app. I used NUnit v3.12 and TestAdapter v3.15.
+ * For demonstration I created one test.
+ */
+
 namespace Logic.Library.Tests
 {
     [TestFixture]
